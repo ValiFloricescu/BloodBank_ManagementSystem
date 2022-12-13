@@ -9,9 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Bunifu.Charts.WinForms" Version="1.1.5" />
+    <PackageReference Include="Bunifu.UI.WinForms" Version="6.0.2" />
     <PackageReference Include="Bunifu.UI.WinForms.NetCore" Version="1.0.1" />
     <PackageReference Include="Guna.UI2.WinForms" Version="2.0.3.5" />
+    <PackageReference Include="Guna.UI3.WinForms" Version="0.8.3" />
+    <PackageReference Include="KendoUICore" Version="2022.3.1109" />
+    <PackageReference Include="MaterialSkin.Updated" Version="0.2.2" />
   </ItemGroup>
 
   <ItemGroup>
