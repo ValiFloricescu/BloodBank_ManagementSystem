@@ -31,18 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Patient));
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label16 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.PBGroupCb = new System.Windows.Forms.ComboBox();
+            this.PAddressTb = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.PPhoneTb = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.PGenCb = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.PAgeTb = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.PNameTb = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -56,6 +56,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -84,6 +85,7 @@
             this.bunifuThinButton21.Size = new System.Drawing.Size(153, 41);
             this.bunifuThinButton21.TabIndex = 39;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // label16
             // 
@@ -97,11 +99,11 @@
             this.label16.Text = "Blood Group";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox2
+            // PBGroupCb
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.PBGroupCb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PBGroupCb.FormattingEnabled = true;
+            this.PBGroupCb.Items.AddRange(new object[] {
             "0+",
             "A+",
             "B+",
@@ -110,18 +112,18 @@
             "A-",
             "B-",
             "AB-"});
-            this.comboBox2.Location = new System.Drawing.Point(1051, 412);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(196, 23);
-            this.comboBox2.TabIndex = 37;
+            this.PBGroupCb.Location = new System.Drawing.Point(1051, 412);
+            this.PBGroupCb.Name = "PBGroupCb";
+            this.PBGroupCb.Size = new System.Drawing.Size(196, 23);
+            this.PBGroupCb.TabIndex = 37;
             // 
-            // textBox4
+            // PAddressTb
             // 
-            this.textBox4.Location = new System.Drawing.Point(731, 415);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(196, 104);
-            this.textBox4.TabIndex = 36;
+            this.PAddressTb.Location = new System.Drawing.Point(731, 415);
+            this.PAddressTb.Multiline = true;
+            this.PAddressTb.Name = "PAddressTb";
+            this.PAddressTb.Size = new System.Drawing.Size(196, 104);
+            this.PAddressTb.TabIndex = 36;
             // 
             // label14
             // 
@@ -157,13 +159,13 @@
             this.label15.Text = "Phone";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox3
+            // PPhoneTb
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(406, 414);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(196, 21);
-            this.textBox3.TabIndex = 32;
+            this.PPhoneTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PPhoneTb.Location = new System.Drawing.Point(406, 414);
+            this.PPhoneTb.Name = "PPhoneTb";
+            this.PPhoneTb.Size = new System.Drawing.Size(196, 21);
+            this.PPhoneTb.TabIndex = 32;
             // 
             // label13
             // 
@@ -177,17 +179,17 @@
             this.label13.Text = "Gender";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // PGenCb
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.PGenCb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PGenCb.FormattingEnabled = true;
+            this.PGenCb.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.comboBox1.Location = new System.Drawing.Point(1051, 320);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(196, 23);
-            this.comboBox1.TabIndex = 30;
+            this.PGenCb.Location = new System.Drawing.Point(1051, 320);
+            this.PGenCb.Name = "PGenCb";
+            this.PGenCb.Size = new System.Drawing.Size(196, 23);
+            this.PGenCb.TabIndex = 30;
             // 
             // label12
             // 
@@ -201,13 +203,13 @@
             this.label12.Text = "Age";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox2
+            // PAgeTb
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(731, 322);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(196, 21);
-            this.textBox2.TabIndex = 28;
+            this.PAgeTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PAgeTb.Location = new System.Drawing.Point(731, 322);
+            this.PAgeTb.Name = "PAgeTb";
+            this.PAgeTb.Size = new System.Drawing.Size(196, 21);
+            this.PAgeTb.TabIndex = 28;
             // 
             // label11
             // 
@@ -221,13 +223,13 @@
             this.label11.Text = "Name";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // PNameTb
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(406, 322);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(196, 21);
-            this.textBox1.TabIndex = 26;
+            this.PNameTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PNameTb.Location = new System.Drawing.Point(406, 322);
+            this.PNameTb.Name = "PNameTb";
+            this.PNameTb.Size = new System.Drawing.Size(196, 21);
+            this.PNameTb.TabIndex = 26;
             // 
             // label10
             // 
@@ -279,7 +281,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(50, 490);
+            this.label8.Location = new System.Drawing.Point(50, 550);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(131, 29);
             this.label8.TabIndex = 15;
@@ -291,7 +293,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(50, 425);
+            this.label7.Location = new System.Drawing.Point(50, 485);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(173, 29);
             this.label7.TabIndex = 13;
@@ -303,7 +305,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(50, 361);
+            this.label6.Location = new System.Drawing.Point(50, 421);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(143, 29);
             this.label6.TabIndex = 11;
@@ -315,17 +317,18 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(50, 298);
+            this.label5.Location = new System.Drawing.Point(50, 358);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(158, 29);
             this.label5.TabIndex = 9;
             this.label5.Text = "View Patients";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Orange;
-            this.panel5.Location = new System.Drawing.Point(28, 235);
+            this.panel5.Location = new System.Drawing.Point(28, 295);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(10, 29);
             this.panel5.TabIndex = 8;
@@ -335,7 +338,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(50, 235);
+            this.label4.Location = new System.Drawing.Point(50, 295);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 29);
             this.label4.TabIndex = 7;
@@ -369,6 +372,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Red;
+            this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
@@ -384,6 +388,18 @@
             this.panel1.Size = new System.Drawing.Size(241, 672);
             this.panel1.TabIndex = 23;
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(50, 235);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(90, 29);
+            this.label17.TabIndex = 19;
+            this.label17.Text = "Donate";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -392,18 +408,18 @@
             this.ClientSize = new System.Drawing.Size(1453, 672);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.PBGroupCb);
+            this.Controls.Add(this.PAddressTb);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.PPhoneTb);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.PGenCb);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.PAgeTb);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.PNameTb);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -412,6 +428,7 @@
             this.Name = "Patient";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Patient";
+            this.Load += new System.EventHandler(this.Patient_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -426,18 +443,18 @@
 
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private Label label16;
-        private ComboBox comboBox2;
-        private TextBox textBox4;
+        private ComboBox PBGroupCb;
+        private TextBox PAddressTb;
         private Label label14;
         private PictureBox pictureBox1;
         private Label label15;
-        private TextBox textBox3;
+        private TextBox PPhoneTb;
         private Label label13;
-        private ComboBox comboBox1;
+        private ComboBox PGenCb;
         private Label label12;
-        private TextBox textBox2;
+        private TextBox PAgeTb;
         private Label label11;
-        private TextBox textBox1;
+        private TextBox PNameTb;
         private Label label10;
         private Label label1;
         private Panel panel2;
@@ -451,5 +468,6 @@
         private Label label3;
         private Label label2;
         private Panel panel1;
+        private Label label17;
     }
 }

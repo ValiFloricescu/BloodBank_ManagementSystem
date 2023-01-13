@@ -48,6 +48,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,6 +58,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Red;
+            this.panel1.Controls.Add(this.panel10);
+            this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.panel9);
             this.panel1.Controls.Add(this.label8);
@@ -92,7 +96,7 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Orange;
-            this.panel9.Location = new System.Drawing.Point(28, 490);
+            this.panel9.Location = new System.Drawing.Point(28, 550);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(10, 29);
             this.panel9.TabIndex = 16;
@@ -102,7 +106,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(50, 490);
+            this.label8.Location = new System.Drawing.Point(50, 550);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(131, 29);
             this.label8.TabIndex = 15;
@@ -112,7 +116,7 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.Orange;
-            this.panel8.Location = new System.Drawing.Point(28, 425);
+            this.panel8.Location = new System.Drawing.Point(28, 485);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(10, 29);
             this.panel8.TabIndex = 14;
@@ -122,7 +126,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(50, 425);
+            this.label7.Location = new System.Drawing.Point(50, 485);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(173, 29);
             this.label7.TabIndex = 13;
@@ -132,7 +136,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Orange;
-            this.panel7.Location = new System.Drawing.Point(28, 361);
+            this.panel7.Location = new System.Drawing.Point(28, 421);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(10, 29);
             this.panel7.TabIndex = 12;
@@ -142,7 +146,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(50, 361);
+            this.label6.Location = new System.Drawing.Point(50, 421);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(143, 29);
             this.label6.TabIndex = 11;
@@ -152,7 +156,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Orange;
-            this.panel6.Location = new System.Drawing.Point(28, 298);
+            this.panel6.Location = new System.Drawing.Point(28, 358);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(10, 29);
             this.panel6.TabIndex = 10;
@@ -162,7 +166,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(50, 298);
+            this.label5.Location = new System.Drawing.Point(50, 358);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(158, 29);
             this.label5.TabIndex = 9;
@@ -172,7 +176,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Orange;
-            this.panel5.Location = new System.Drawing.Point(28, 235);
+            this.panel5.Location = new System.Drawing.Point(28, 295);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(10, 29);
             this.panel5.TabIndex = 8;
@@ -182,7 +186,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(50, 235);
+            this.label4.Location = new System.Drawing.Point(50, 295);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 29);
             this.label4.TabIndex = 7;
@@ -263,6 +267,26 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(50, 232);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(90, 29);
+            this.label17.TabIndex = 19;
+            this.label17.Text = "Donate";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.Orange;
+            this.panel10.Location = new System.Drawing.Point(28, 232);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(10, 29);
+            this.panel10.TabIndex = 20;
+            // 
             // Mainform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -307,5 +331,7 @@
         private Panel panel6;
         private Label label5;
         private PictureBox pictureBox1;
+        private Panel panel10;
+        private Label label17;
     }
 }

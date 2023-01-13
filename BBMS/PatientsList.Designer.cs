@@ -40,17 +40,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label16 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.PBGroupCb = new System.Windows.Forms.ComboBox();
+            this.PAddressTb = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.PPhoneTb = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.PGenderCb = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.PAgeTb = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.PNameTb = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -59,10 +59,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.PatientsDGV = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.label17 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PatientsDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -70,7 +71,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(50, 425);
+            this.label7.Location = new System.Drawing.Point(50, 482);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(173, 29);
             this.label7.TabIndex = 13;
@@ -82,7 +83,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(50, 361);
+            this.label6.Location = new System.Drawing.Point(50, 418);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(143, 29);
             this.label6.TabIndex = 11;
@@ -94,7 +95,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(50, 298);
+            this.label5.Location = new System.Drawing.Point(50, 355);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(158, 29);
             this.label5.TabIndex = 9;
@@ -104,7 +105,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Orange;
-            this.panel5.Location = new System.Drawing.Point(34, 298);
+            this.panel5.Location = new System.Drawing.Point(34, 355);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(10, 29);
             this.panel5.TabIndex = 8;
@@ -114,12 +115,13 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(50, 235);
+            this.label4.Location = new System.Drawing.Point(50, 292);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 29);
             this.label4.TabIndex = 7;
             this.label4.Text = "Patient";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -156,6 +158,7 @@
             this.bunifuThinButton21.Size = new System.Drawing.Size(153, 41);
             this.bunifuThinButton21.TabIndex = 56;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // label16
             // 
@@ -169,11 +172,11 @@
             this.label16.Text = "Blood Group";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox2
+            // PBGroupCb
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.PBGroupCb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PBGroupCb.FormattingEnabled = true;
+            this.PBGroupCb.Items.AddRange(new object[] {
             "0+",
             "A+",
             "B+",
@@ -182,18 +185,18 @@
             "A-",
             "B-",
             "AB-"});
-            this.comboBox2.Location = new System.Drawing.Point(857, 242);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(196, 23);
-            this.comboBox2.TabIndex = 54;
+            this.PBGroupCb.Location = new System.Drawing.Point(857, 242);
+            this.PBGroupCb.Name = "PBGroupCb";
+            this.PBGroupCb.Size = new System.Drawing.Size(196, 23);
+            this.PBGroupCb.TabIndex = 54;
             // 
-            // textBox4
+            // PAddressTb
             // 
-            this.textBox4.Location = new System.Drawing.Point(602, 242);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(196, 20);
-            this.textBox4.TabIndex = 53;
+            this.PAddressTb.Location = new System.Drawing.Point(602, 242);
+            this.PAddressTb.Multiline = true;
+            this.PAddressTb.Name = "PAddressTb";
+            this.PAddressTb.Size = new System.Drawing.Size(196, 20);
+            this.PAddressTb.TabIndex = 53;
             // 
             // label14
             // 
@@ -219,13 +222,13 @@
             this.label15.Text = "Phone";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox3
+            // PPhoneTb
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(1113, 182);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(196, 21);
-            this.textBox3.TabIndex = 49;
+            this.PPhoneTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PPhoneTb.Location = new System.Drawing.Point(1113, 182);
+            this.PPhoneTb.Name = "PPhoneTb";
+            this.PPhoneTb.Size = new System.Drawing.Size(196, 21);
+            this.PPhoneTb.TabIndex = 49;
             // 
             // label13
             // 
@@ -239,17 +242,17 @@
             this.label13.Text = "Gender";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // PGenderCb
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.PGenderCb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PGenderCb.FormattingEnabled = true;
+            this.PGenderCb.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.comboBox1.Location = new System.Drawing.Point(857, 180);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(196, 23);
-            this.comboBox1.TabIndex = 47;
+            this.PGenderCb.Location = new System.Drawing.Point(857, 180);
+            this.PGenderCb.Name = "PGenderCb";
+            this.PGenderCb.Size = new System.Drawing.Size(196, 23);
+            this.PGenderCb.TabIndex = 47;
             // 
             // label12
             // 
@@ -263,13 +266,13 @@
             this.label12.Text = "Age";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox2
+            // PAgeTb
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(602, 180);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(196, 21);
-            this.textBox2.TabIndex = 45;
+            this.PAgeTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PAgeTb.Location = new System.Drawing.Point(602, 180);
+            this.PAgeTb.Name = "PAgeTb";
+            this.PAgeTb.Size = new System.Drawing.Size(196, 21);
+            this.PAgeTb.TabIndex = 45;
             // 
             // label11
             // 
@@ -283,13 +286,13 @@
             this.label11.Text = "Name";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // PNameTb
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(356, 178);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(196, 21);
-            this.textBox1.TabIndex = 43;
+            this.PNameTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PNameTb.Location = new System.Drawing.Point(356, 178);
+            this.PNameTb.Name = "PNameTb";
+            this.PNameTb.Size = new System.Drawing.Size(196, 21);
+            this.PNameTb.TabIndex = 43;
             // 
             // label9
             // 
@@ -341,7 +344,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(50, 490);
+            this.label8.Location = new System.Drawing.Point(50, 547);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(131, 29);
             this.label8.TabIndex = 15;
@@ -363,6 +366,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Red;
+            this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
@@ -403,56 +407,69 @@
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
-            // guna2DataGridView1
+            // PatientsDGV
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.PatientsDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeight = 4;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.PatientsDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.PatientsDGV.ColumnHeadersHeight = 28;
+            this.PatientsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(312, 316);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.RowTemplate.Height = 25;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(1058, 332);
-            this.guna2DataGridView1.TabIndex = 58;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 25;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.PatientsDGV.DefaultCellStyle = dataGridViewCellStyle3;
+            this.PatientsDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.PatientsDGV.Location = new System.Drawing.Point(321, 319);
+            this.PatientsDGV.Name = "PatientsDGV";
+            this.PatientsDGV.RowHeadersVisible = false;
+            this.PatientsDGV.RowTemplate.Height = 25;
+            this.PatientsDGV.Size = new System.Drawing.Size(1058, 329);
+            this.PatientsDGV.TabIndex = 58;
+            this.PatientsDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.PatientsDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.PatientsDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.PatientsDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.PatientsDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.PatientsDGV.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.PatientsDGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.PatientsDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Red;
+            this.PatientsDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.PatientsDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PatientsDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.PatientsDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.PatientsDGV.ThemeStyle.HeaderStyle.Height = 28;
+            this.PatientsDGV.ThemeStyle.ReadOnly = false;
+            this.PatientsDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.PatientsDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.PatientsDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PatientsDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.PatientsDGV.ThemeStyle.RowsStyle.Height = 25;
+            this.PatientsDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.Crimson;
+            this.PatientsDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.PatientsDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PatientsDGV_CellContentClick);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(50, 233);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(90, 29);
+            this.label17.TabIndex = 19;
+            this.label17.Text = "Donate";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PatientsList
             // 
@@ -460,21 +477,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1453, 672);
-            this.Controls.Add(this.guna2DataGridView1);
+            this.Controls.Add(this.PatientsDGV);
             this.Controls.Add(this.bunifuThinButton22);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.PBGroupCb);
+            this.Controls.Add(this.PAddressTb);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.PPhoneTb);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.PGenderCb);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.PAgeTb);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.PNameTb);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);
@@ -482,11 +499,12 @@
             this.Name = "PatientsList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PatientsList";
+            this.Load += new System.EventHandler(this.PatientsList_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PatientsDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -502,17 +520,17 @@
         private Label label3;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private Label label16;
-        private ComboBox comboBox2;
-        private TextBox textBox4;
+        private ComboBox PBGroupCb;
+        private TextBox PAddressTb;
         private Label label14;
         private Label label15;
-        private TextBox textBox3;
+        private TextBox PPhoneTb;
         private Label label13;
-        private ComboBox comboBox1;
+        private ComboBox PGenderCb;
         private Label label12;
-        private TextBox textBox2;
+        private TextBox PAgeTb;
         private Label label11;
-        private TextBox textBox1;
+        private TextBox PNameTb;
         private Label label9;
         private Panel panel2;
         private Label label1;
@@ -521,6 +539,7 @@
         private Label label2;
         private Panel panel1;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Guna.UI2.WinForms.Guna2DataGridView PatientsDGV;
+        private Label label17;
     }
 }

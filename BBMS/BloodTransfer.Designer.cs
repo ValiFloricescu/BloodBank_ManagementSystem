@@ -41,16 +41,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.PatientIDCb = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.PatNameTb = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.BloodGroup = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -106,7 +107,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(50, 490);
+            this.label8.Location = new System.Drawing.Point(50, 549);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(131, 29);
             this.label8.TabIndex = 15;
@@ -118,7 +119,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(50, 425);
+            this.label7.Location = new System.Drawing.Point(50, 484);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(173, 29);
             this.label7.TabIndex = 13;
@@ -130,7 +131,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(50, 361);
+            this.label6.Location = new System.Drawing.Point(50, 420);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(143, 29);
             this.label6.TabIndex = 11;
@@ -142,7 +143,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(50, 298);
+            this.label5.Location = new System.Drawing.Point(50, 357);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(158, 29);
             this.label5.TabIndex = 9;
@@ -154,7 +155,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(50, 235);
+            this.label4.Location = new System.Drawing.Point(50, 294);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 29);
             this.label4.TabIndex = 7;
@@ -188,6 +189,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Red;
+            this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
@@ -203,10 +205,22 @@
             this.panel1.Size = new System.Drawing.Size(241, 672);
             this.panel1.TabIndex = 36;
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(50, 233);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(90, 29);
+            this.label17.TabIndex = 19;
+            this.label17.Text = "Donate";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Orange;
-            this.panel4.Location = new System.Drawing.Point(34, 425);
+            this.panel4.Location = new System.Drawing.Point(34, 484);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(10, 29);
             this.panel4.TabIndex = 6;
@@ -233,25 +247,6 @@
             this.label16.Text = "Blood Group";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "0+",
-            "A+",
-            "B+",
-            "AB+",
-            "0-",
-            "A-",
-            "B-",
-            "AB-"});
-            this.comboBox2.Location = new System.Drawing.Point(1096, 310);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(196, 23);
-            this.comboBox2.TabIndex = 43;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -265,17 +260,19 @@
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
-            // comboBox1
+            // PatientIDCb
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.PatientIDCb.Enabled = false;
+            this.PatientIDCb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PatientIDCb.FormattingEnabled = true;
+            this.PatientIDCb.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.comboBox1.Location = new System.Drawing.Point(362, 310);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(196, 23);
-            this.comboBox1.TabIndex = 41;
+            this.PatientIDCb.Location = new System.Drawing.Point(362, 310);
+            this.PatientIDCb.Name = "PatientIDCb";
+            this.PatientIDCb.Size = new System.Drawing.Size(196, 23);
+            this.PatientIDCb.TabIndex = 41;
+            this.PatientIDCb.SelectedIndexChanged += new System.EventHandler(this.PatientIDCb_SelectedIndexChanged);
             // 
             // label11
             // 
@@ -289,13 +286,14 @@
             this.label11.Text = "Name";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // PatNameTb
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(725, 310);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(196, 21);
-            this.textBox1.TabIndex = 45;
+            this.PatNameTb.Enabled = false;
+            this.PatNameTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PatNameTb.Location = new System.Drawing.Point(725, 310);
+            this.PatNameTb.Name = "PatNameTb";
+            this.PatNameTb.Size = new System.Drawing.Size(196, 21);
+            this.PatNameTb.TabIndex = 45;
             // 
             // label12
             // 
@@ -333,28 +331,39 @@
             this.bunifuThinButton21.TabIndex = 48;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // BloodGroup
+            // 
+            this.BloodGroup.Enabled = false;
+            this.BloodGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BloodGroup.Location = new System.Drawing.Point(1096, 312);
+            this.BloodGroup.Name = "BloodGroup";
+            this.BloodGroup.Size = new System.Drawing.Size(196, 21);
+            this.BloodGroup.TabIndex = 49;
+            // 
             // BloodTransfer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1453, 672);
+            this.Controls.Add(this.BloodGroup);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.PatNameTb);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.PatientIDCb);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
+            this.Enabled = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BloodTransfer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BloodTransfer";
+            this.Load += new System.EventHandler(this.BloodTransfer_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -382,12 +391,13 @@
         private Panel panel4;
         private PictureBox pictureBox1;
         private Label label16;
-        private ComboBox comboBox2;
         private Label label13;
-        private ComboBox comboBox1;
+        private ComboBox PatientIDCb;
         private Label label11;
-        private TextBox textBox1;
+        private TextBox PatNameTb;
         private Label label12;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private Label label17;
+        private TextBox BloodGroup;
     }
 }
